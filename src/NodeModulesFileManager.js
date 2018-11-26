@@ -38,6 +38,7 @@ class NodeModulesFileManager extends less.FileManager {
     loadFile (filename) {
         let filenameNormalized = NodeModulesFileManager.normalizeFilename(filename);
         let filenameResolved = this.getResolvedImportPathsForFilename(filenameNormalized).reduce((filePathFound, filePath) => {
+            // Do not try to find anything else once we've got a file
             if (filePathFound !== null) {
                 return filePathFound;
             }
@@ -53,6 +54,8 @@ class NodeModulesFileManager extends less.FileManager {
                     return filePath;
                 }
             }
+
+            return null;
         }, null);
 
         if (typeof filenameResolved !== 'string') {
