@@ -14,6 +14,17 @@ class LessPluginNodeModulesImport {
         pluginManager.addFileManager(new NodeModulesFileManager(this.options));
     }
 
+    setOptions (options) {
+        let optionsObject;
+        try {
+            optionsObject = JSON.parse(options);
+        } catch (e) {
+            throw new Error(`Passed options for less-plugin-nodemodules-import are no valid JSON`);
+        }
+
+        this.options = Object.assign({}, this.options, optionsObject);
+    }
+
 }
 
 module.exports = LessPluginNodeModulesImport;
