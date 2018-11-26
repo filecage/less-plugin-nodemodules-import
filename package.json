@@ -1,6 +1,6 @@
 {
   "name": "@thomann/less-plugin-nodemodules-import",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Allows importing less files from `node_modules` directory",
   "main": "index.js",
   "repository": {
