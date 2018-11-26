@@ -56,7 +56,7 @@ class NodeModulesFileManager extends less.FileManager {
         }, null);
 
         if (typeof filenameResolved !== 'string') {
-            return Promise.reject(`Could not import less file "${filename}", not resolvable`);
+            return Promise.reject({message: `Could not import less file "${filename}", not resolvable`, type: 'File'});
         }
 
         return new Promise((resolve, reject) => {
