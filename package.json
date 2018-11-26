@@ -1,0 +1,26 @@
+{
+  "name": "@thomann/less-plugin-nodemodules-import",
+  "version": "0.0.1",
+  "description": "Allows importing less files from `node_modules` directory",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomn/less-plugin-nodemodules-import.git"
+  },
+  "keywords": [
+    "less-plugin",
+    "npm-import",
+    "less",
+    "npm",
+    "node_modules"
+  ],
+  "author": "David Beuchert <david@thomann.io>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/thomn/less-plugin-nodemodules-import/issues"
+  },
+  "homepage": "https://github.com/thomn/less-plugin-nodemodules-import#readme",
+  "dependencies": {
+    "less": "^2.7.1"
+  }
+}
