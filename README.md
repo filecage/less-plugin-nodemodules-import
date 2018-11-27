@@ -31,4 +31,4 @@ Note that the parameters have to be valid JSON.
 |`mainFile`|string|index.less|Which file to load if the import is a directory|
 |`encoding`|string|utf-8|Encoding for reading imported files|
 
-Directories in `importPaths` have to be absolute or relative to the **executing file**. 
+Directories in `importPaths` have to be absolute _or_ relative to the current working directory.
